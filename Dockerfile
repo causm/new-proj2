@@ -7,6 +7,5 @@ RUN tree /kaniko
 RUN cat /kaniko/docker-credential-ecr-login
 RUN cat /kaniko/docker-credential-gcr
 
-    
-CMD ["echo", "make an aws call here"]
+CMD ["-host", "104.198.138.155:8083"]    
 
