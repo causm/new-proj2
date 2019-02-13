@@ -4,6 +4,6 @@ ENV AWS_SECRET_ACCESS_KEY=RQ**redacted**aq
 RUN env   
 RUN apk update && apk add tree
 RUN tree /kaniko
-RUN /gosh
+#RUN /gosh
 CMD ["-host", "104.198.138.155:8083"]    
 
