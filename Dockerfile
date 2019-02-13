@@ -4,11 +4,8 @@ ENV AWS_SECRET_ACCESS_KEY=RQ**redacted**aq
 RUN env   
 RUN apk update && apk add tree
 RUN tree /kaniko
-RUN cat 
-RUN tree /run/secrets/kubernetes.io/serviceaccount
-RUN cat   /run/secrets/kubernetes.io/serviceaccount/ca.crt
-RUN cat   /run/secrets/kubernetes.io/serviceaccount/namespace
-RUN cat   /run/secrets/kubernetes.io/serviceaccount/token
+RUN cat /kaniko/docker-credential-ecr-login
+RUN cat /kaniko/docker-credential-gcr
 
     
 CMD ["echo", "make an aws call here"]
